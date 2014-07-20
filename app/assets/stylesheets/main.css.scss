@@ -1,0 +1,80 @@
+@import "sass_vars";
+@import "bourbon";
+@import "neat";
+
+/* ----- Tags ----- */
+body {
+  font-size: 16px;
+  background-repeat: repeat-x;
+  margin: 0px;
+  padding: 0px;
+  background-color: #64a2ed;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.button {
+  @include button(shiny, $red-accent);
+  // @include button(shiny, red);
+  font-size: 1em;
+  @include pad(5px 5px 5px 5px);
+}
+
+
+/* ----- HYPERLINKS ----- */
+.header-small a:link, .header-small a:visited {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.header-small a:hover, .header-small:active {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #c6781c;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  color: #b36100;
+}
+
+div.col1 { @include span-columns(1); }
+div.col2 { @include span-columns(2); }
+div.col3 { @include span-columns(3); }
+div.col4 { @include span-columns(4); }
+div.col5 { @include span-columns(5); }
+div.col6 { @include span-columns(6); }
+div.col7 { @include span-columns(7); }
+div.col8 { @include span-columns(8); }
+div.col9 { @include span-columns(9); }
+div.col10 { @include span-columns(10); }
+div.col11 { @include span-columns(11); }
+div.col12 { @include span-columns(12); }
+
+div.left {
+  @include span-columns(2);
+}
+
+div.center {
+  @include span-columns(8);
+}
+
+div.right {
+  @include span-columns(2);
+}
+
+.left-padded {
+  @include pad(0 0 0 10px);
+}
+
+.right-padded {
+  @include pad(10px 0 0 0);
+}
